@@ -9,6 +9,8 @@ export default function Search() {
           type="search"
           placeholder="Search Location"
           required
+          id="inputField"
+          name="inputField"
         />
         <button type="submit">
           <img src={SearchImage} alt="search-image" />
