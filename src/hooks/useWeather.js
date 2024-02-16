@@ -4,7 +4,7 @@ import { LocationContext } from "../context";
 const useWeather = () => {
   const [weatherData, setWeatherData] = useState({
     location: "",
-    climax: "",
+    climate: "",
     temperature: "",
     maxTemperature: "",
     minTemperature: "",
@@ -49,7 +49,7 @@ const useWeather = () => {
       const updateWeatherData = {
         ...weatherData,
         location: data?.name,
-        climax: data?.weather[0]?.main,
+        climate: data?.weather[0]?.main,
         temperature: data?.main?.temp,
         maxTemperature: data?.main?.temp_max,
         minTemperature: data?.main?.temp_min,
