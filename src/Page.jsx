@@ -3,12 +3,12 @@ import Header from "./components/header/Header";
 import WeatherBoard from "./components/weather/WeatherBoard";
 import { WeatherContext } from "./context";
 
-import ClearSkyImage from "./assets/backgrounds/clear-sky.jpg";
+import ClearSkyImage from "./assets/backgrounds/clearSky.jpg";
 import FewCloudsImage from "./assets/backgrounds/few-clouds.jpg";
 import MistImage from "./assets/backgrounds/mist.jpeg";
 import RainyDayImage from "./assets/backgrounds/rainy-day.jpg";
 import ScattedCloudsImage from "./assets/backgrounds/scattered-clouds.jpg";
-import SnowImage from "./assets/backgrounds/sunny.jpg";
+import SnowImage from "./assets/backgrounds/snow.jpg";
 import ThunderStormImage from "./assets/backgrounds/thunderstorm.jpg";
 import WinterImage from "./assets/backgrounds/winter.jpg";
 
@@ -54,7 +54,7 @@ export default function Page() {
       ) : (
         <div
           style={{ background: `url(${climateImage})` }}
-          className="grid place-items-center h-screen bg-no-repeat bg-cover"
+          className="grid place-items-center bg-no-repeat bg-cover"
         >
           <Header />
           <main>
